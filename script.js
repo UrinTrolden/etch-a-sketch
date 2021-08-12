@@ -38,8 +38,10 @@ let gridColorer = () => {
 resetBtn.onclick = () => {
     let rows = prompt("How many rows do you want?");
     let cols = prompt("How many collumns do you want?");
-    if ((cols || rows) > 100) {
-        return alert("Can't do more than 100 rows or collumns, try again.")
+    if (rows > 100) {
+        return alert("Can't do more than 100 rows or collumns, try again.");
+    } else if (cols > 100) {
+        return alert("Can't do more than 100 rows or collumns, try again.");
     }
     return createGrid(rows, cols);
 }
