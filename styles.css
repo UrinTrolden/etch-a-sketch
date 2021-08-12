@@ -8,6 +8,9 @@
   grid-gap: 0px;
   grid-template-rows: repeat(var(--grid-rows), 1fr);
   grid-template-columns: repeat(var(--grid-cols), 1fr);
+  width: 30em;
+  height: 30em;
+  border: 1px solid rgb(255, 0, 0);
 }
 
 .grid-item {
@@ -19,7 +22,6 @@
 
 .grid-item:hover {
   display: grid;
-
-  border: 1px solid rgb(255, 0, 0);
+  background-color: black;
   text-align: center;
 }
